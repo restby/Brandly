@@ -10,50 +10,57 @@
     <header class="page-header">
       <nav class="page-header__navigation  navigation">
         <a class="navigation__logo-link">
-          <img class="navigation__logo-img" width="20" height="20" src="#" alt="логотип магазина Brandly">
+          <span class="navigation__logo-text">Brand<span>ly</span></span>
         </a>
         <ul class="navigation__list">
           <li class="navigation__item  navigation__item--home">
-            <a href="#" class="navigation__link  navigation__link--home">Home</a>
+            <a class="navigation__link  navigation__link--home" aria-label="текущая станица">Home</a>
           </li>
           <li class="navigation__item  navigation__item--shop">
-            <a href="#" class="navigation__link  navigation__link--shop">Shop</a>
+            <a href="#" class="navigation__link  navigation__link--shop" aria-label="ссылка на страницу shop">Shop</a>
           </li>
           <li class="navigation__item  navigation__item--brands">
-            <a href="#" class="navigation__link  navigation__link--brands">Brands</a>
+            <a href="#" class="navigation__link  navigation__link--brands" aria-label="ссылка на страницу brands">Brands</a>
           </li>
           <li class="navigation__item  navigation__item--blog">
-            <a href="#" class="navigation__link  navigation__link--blog">Blog</a>
+            <a href="#" class="navigation__link  navigation__link--blog" aria-label="ссылка на страницу blog">Blog</a>
           </li>
           <li class="navigation__item  navigation__item--about">
-            <a href="#" class="navigation__link  navigation__link--about">About</a>
+            <a href="#" class="navigation__link  navigation__link--about" aria-label="ссылка на страницу about">About</a>
           </li>
           <li class="navigation__item  navigation__item--contact">
-            <a href="#" class="navigation__link  navigation__link--contact">Contact</a>
+            <a href="#" class="navigation__link  navigation__link--contact" aria-label="ссылка на страницу contact">Contact</a>
           </li>
         </ul>
       </nav>
       <div class="page-header__wrapper">
-        <h1 class="page-header__title">SPRING / SUMMER COLLECTION</h1>
-        <b class="page-header__promo">UP TO 60% DISCOUNT ON NEW ARRIVALS</b>
-        <b class="page-header__text">TRENDING NEW ITEMS,FROM CREATORS AROUND THE WORLD</b>
-        <a href="#" class="page-header__link">SHOP NOW</a>
-      </div>
-      <div class="page-header__indicator  indicator">
-        <ul class="indicator__list">
-          <li class="indicator__item  indicator__item--1">
-            <button class="indicator__btn  indicator__btn--1" type="button"></button>
-          </li>
-          <li class="indicator__item  indicator__item--2">
-            <button class="indicator__btn  indicator__btn--2" type="button"></button>
-          </li>
-          <li class="indicator__item  indicator__item--3">
-            <button class="indicator__btn  indicator__btn--3  indicator__btn--active" type="button"></button>
-          </li>
-          <li class="indicator__item  indicator__item--4">
-            <button class="indicator__btn  indicator__btn--4" type="button"></button>
-          </li>
-        </ul>
+        <h1 class="page-header__title">Brandly COLLECTION</h1>
+        <div class="slider">
+          <ul class="slider__list">
+            <li class="slider__item  slider__item--1">
+              <h2 class="slider__item__title">SPRING / SUMMER COLLECTION</h2>
+              <b class="slider__item__promo">UP TO 60% DISCOUNT ON NEW ARRIVALS</b>
+              <b class=slider__item__text">TRENDING NEW ITEMS,FROM CREATORS AROUND THE WORLD</b>
+              <a class="slider__item__link" href="#" aria-label="ссылка на страницу shop">SHOP NOW</a>
+            </li>
+          </ul>
+          <div class="slider__indicator  indicator">
+            <ul class="indicator__list">
+              <li class="indicator__item  indicator__item--1">
+                <button class="indicator__btn  indicator__btn--1" type="button"></button>
+              </li>
+              <li class="indicator__item  indicator__item--2">
+                <button class="indicator__btn  indicator__btn--2" type="button"></button>
+              </li>
+              <li class="indicator__item  indicator__item--3">
+                <button class="indicator__btn  indicator__btn--3  indicator__btn--active" type="button"></button>
+              </li>
+              <li class="indicator__item  indicator__item--4">
+                <button class="indicator__btn  indicator__btn--4" type="button"></button>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <main class="page-main">
@@ -61,80 +68,88 @@
         <h2 class="products__title">Latest Products</h2>
         <ul class="products__list">
           <li class="products__item  products__item--men">
-            <a href="#" class="products__link  products__link--men">Men</a>
+            <a href="#" class="products__link  products__link--men" aria-label="ссылка на страницу men">Men</a>
           </li>
           <li class="products__item  products__item--woman">
-            <a href="#" class="products__link  products__link--woman">Woman</a>
+            <a href="#" class="products__link  products__link--woman" aria-label="ссылка на страницу woman">Woman</a>
           </li>
           <li class="products__item  products__item--watches">
-            <a href="#" class="products__link  products__link--watches">Watches</a>
+            <a href="#" class="products__link  products__link--watches" aria-label="ссылка на страницу watches">Watches</a>
           </li>
           <li class="products__item  products__item--new-collection">
-            <a href="#" class="products__link  products__link--new-collection">40% Off<br>
-              New Autumn<br>
-            Collection</a>
+            <a href="#" class="products__link  products__link--new-collection" aria-label="ссылка на страницу collection">40% Off New Autumn Collection</a>
           </li>
           <li class="products__item  products__item--mega-sale">
-            <a href="#" class="products__link  products__link--mega-sale">MEGA SALE<br>
-              ON ITEMS FROM<br>
-            SPIRIT COLLECTION</a>
+            <a href="#" class="products__link  products__link--mega-sale" aria-label="ссылка на страницу sale">MEGA SALE ON ITEMS FROM SPIRIT COLLECTION</a>
           </li>
         </ul>
       </section>
       <section class="trend">
         <h2 class="trend__title">Trending Items</h2>
-        <img class="trend__img" width="20" height="20" src="#" alt="NATHAN STEWART JACKET">
-        <div class="trend__wrapper">
-          <h3 class="trend__item-title">NATHAN STEWART JACKET</h3>
-          <span class="trend__item-title-desc">Summer/Autumn Collection</span>
-          <p class="trend__desc">
-            Classic Nathan Stewart Jacket from his latest collection. This item is loved by many just because of it’s simle style. Simple lines,lovely texture,it suits almost everybody. It comes in six different colors,and all sizes.
-          </p>
-          <p class="trend__promo">
-            FASHION TIP: With this jacket,Nathan Stewart sunglasses go hand in hand!
-          </p>
-          <form class="trend__form" action="https://echo.htmlacademy.ru" method="get">
-            <ul class="trend__size-list">
-              <li class="trend__size-item  trend__size-item--size-m">
-                <label class="trend__input-label  trend__input-label--size-m">M
-                  <input class="visually-hidden  trend__input  trend__input-radio" type="radio" name="size" value="size-M" aria-label="опция выбора размера M">
-                </label>
-              </li>
-              <li class="trend__size-item  trend__size-item--size-l">
-                <label class="trend__input-label  trend__input-label--size-l  trend__input-label--active">L
-                  <input class="visually-hidden  trend__input  trend__input-radio" type="radio" name="size" value="size-L" aria-label="опция выбора размера L">
-                </label>
-              </li>
-              <li class="trend__size-item  trend__size-item--size-xl">
-                <label class="trend__input-label  trend__input-label--size-x">XL
-                  <input class="visually-hidden  trend__input  item__input-radio" type="radio" name="size" value="size-XL" aria-label="опция выбора размера XL">
-                </label>
-              </li>
-              <li class="trend__size-item  trend__size-item--size-xxl">
-                <label class="trend__input-label  trend__input-label--size-x">XXL
-                  <input class="visually-hidden  trend__input  item__input-radio" type="radio" name="size" value="size-XXL" aria-label="опция выбора размера XXL">
-                </label>
-              </li>
-            </ul>
-            <div class="trend__btn-wrapper">
-              <button class="trend__btn" type="submit">SHOP NOW</button>
-              <a class="trend__link-guide" href="#">SIZE GUIDE</a>
-            </div>
-          </form>
-        </div>
-        <div class="trend__indicator  indicator">
-          <ul class="indicator__list">
-            <li class="indicator__item  indicator__item--1">
-              <button class="indicator__btn  indicator__btn--1  indicator__btn--trend" type="button"></button>
-            </li>
-            <li class="indicator__item  indicator__item--2">
-              <button class="indicator__btn  indicator__btn--2  indicator__btn--trend" type="button"></button>
-            </li>
-            <li class="indicator__item  indicator__item--3">
-              <button class="indicator__btn  indicator__btn--3  indicator__btn--trend  indicator__btn--trend-active" type="button"></button>
-            </li>
-            <li class="indicator__item  indicator__item--4">
-              <button class="indicator__btn  indicator__btn--4  indicator__btn--trend" type="button"></button>
+        <div class="trend__slider">
+          <ul class="trend__slider-list">
+            <li class="trend__slider-item">
+              <img class="trend__slider-img" width="20" height="20" src="#" alt="NATHAN STEWART JACKET">
+              <div class="trend__slider-item-wrapper">
+                <h3 class="trend__slider-item-title">NATHAN STEWART JACKET</h3>
+                <span class="trend__slider-item-text">Summer/Autumn Collection</span>
+                <p class="trend__slider-item-desc">
+                  Classic Nathan Stewart Jacket from his latest collection. This item is loved by many just because of it’s simle style. Simple lines,lovely texture,it suits almost everybody. It comes in six different colors,and all sizes.
+                </p>
+                <p class="trend__slider-item-promo">
+                  FASHION TIP: With this jacket,Nathan Stewart sunglasses go hand in hand!
+                </p>
+
+
+
+                <form class="trend__form" action="https://echo.htmlacademy.ru" method="get">
+                  <ul class="trend__size-list">
+                    <li class="trend__size-item  trend__size-item--size-m">
+                      <label class="trend__input-label  trend__input-label--size-m">M
+                        <input class="visually-hidden  trend__input  trend__input-radio" type="radio" name="size" value="size-M" aria-label="опция выбора размера M">
+                      </label>
+                    </li>
+                    <li class="trend__size-item  trend__size-item--size-l">
+                      <label class="trend__input-label  trend__input-label--size-l  trend__input-label--active">L
+                        <input class="visually-hidden  trend__input  trend__input-radio" type="radio" name="size" value="size-L" aria-label="опция выбора размера L">
+                      </label>
+                    </li>
+                    <li class="trend__size-item  trend__size-item--size-xl">
+                      <label class="trend__input-label  trend__input-label--size-x">XL
+                        <input class="visually-hidden  trend__input  item__input-radio" type="radio" name="size" value="size-XL" aria-label="опция выбора размера XL">
+                      </label>
+                    </li>
+                    <li class="trend__size-item  trend__size-item--size-xxl">
+                      <label class="trend__input-label  trend__input-label--size-x">XXL
+                        <input class="visually-hidden  trend__input  item__input-radio" type="radio" name="size" value="size-XXL" aria-label="опция выбора размера XXL">
+                      </label>
+                    </li>
+                  </ul>
+                  <div class="trend__btn-wrapper">
+                    <button class="trend__btn" type="submit">SHOP NOW</button>
+                    <a class="trend__link-guide" href="#">SIZE GUIDE</a>
+                  </div>
+                </form>
+              </div>
+              <div class="trend__indicator  indicator">
+                <ul class="indicator__list">
+                  <li class="indicator__item  indicator__item--1">
+                    <button class="indicator__btn  indicator__btn--1  indicator__btn--trend" type="button"></button>
+                  </li>
+                  <li class="indicator__item  indicator__item--2">
+                    <button class="indicator__btn  indicator__btn--2  indicator__btn--trend" type="button"></button>
+                  </li>
+                  <li class="indicator__item  indicator__item--3">
+                    <button class="indicator__btn  indicator__btn--3  indicator__btn--trend  indicator__btn--trend-active" type="button"></button>
+                  </li>
+                  <li class="indicator__item  indicator__item--4">
+                    <button class="indicator__btn  indicator__btn--4  indicator__btn--trend" type="button"></button>
+                  </li>
+                </ul>
+              </div>
+
+
+
             </li>
           </ul>
         </div>
