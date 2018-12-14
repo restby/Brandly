@@ -1,0 +1,63 @@
+.subscribe {
+  position: relative;
+  z-index: 2;
+}
+
+.subscribe__text {
+  .reset-ma-pa();
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 300;
+  color: @white-color;
+  margin-bottom: 31px;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 11px;
+    left: 28px;
+    top: 71px;
+    background-image: url("../img/mail-pic.png");
+  }
+}
+
+.subscribe__input {
+  margin-bottom: 73px;
+  width: 771px;
+  height: 51px;
+  box-sizing: border-box;
+  padding: 21px 81px;
+  margin-right: 129px;
+  border: 1px solid @white-color;
+  background-color: transparent;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 13px;
+  font-weight: 300;
+  color: @white-color;
+
+  &::placeholder {
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 13px;
+    line-height: 13px;
+    font-weight: 300;
+    color: @white-color;
+  }
+}
+
+.subscribe__btn {
+  width: 270px;
+  height: 51px;
+  border: none;
+  background-color: @white-color;
+  text-transform: uppercase;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  color: @black-color;
+  cursor: pointer;
+}

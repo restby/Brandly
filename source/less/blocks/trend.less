@@ -1,0 +1,48 @@
+.trend {
+  padding-top: 91px;
+  background-image: url("../img/bg-trend.jpg");
+}
+
+.trend__container {
+  width: @container-width;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.trend__title {
+  .reset-ma-pa();
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: italic;
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 300;
+  color: @grey-color33;
+  text-align: center;
+  position: relative;
+  margin-bottom: 84px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 111px;
+    height: 3px;
+    top: 0;
+    left: 50%;
+    margin-top: -32px;
+    margin-left: -55px;
+    background-color: @red-color;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 111px;
+    height: 3px;
+    bottom: 0;
+    left: 50%;
+    margin-left: -55px;
+    margin-bottom: -30px;
+    background-color: @red-color;
+  }
+}

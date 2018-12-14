@@ -12,7 +12,10 @@
       <div class="page-header__container">
         <nav class="page-header__navigation  navigation">
           <a class="navigation__logo-link" aria-label="логотип ссылка на главную страницу Brandly">
-            <img class="navigation__logo-img" width="125" height="34" src="img/logo.png" alt="логотип Brandly">
+            <picture>
+              <source type="image/webp" srcset="img/logo.webp">
+              <img class="navigation__logo-img" width="125" height="34" src="img/logo.png" alt="логотип Brandly">
+            </picture>
           </a>
           <ul class="navigation__list">
             <li class="navigation__item  navigation__item--home">
@@ -46,19 +49,19 @@
                 <a class="header-slider__item__link" href="#" aria-label="ссылка на страницу shop">SHOP NOW</a>
               </li>
             </ul>
-            <div class="header-slider__indicator  header-indicator">
-              <ul class="header-indicator__list">
-                <li class="header-indicator__item  header-indicator__item--1">
-                  <button class="header-indicator__btn  header-indicator__btn--1" type="button" aria-label="кнопка для перехода на слайдер №1"></button>
+            <div class="indicators">
+              <ul class="indicators__list">
+                <li class="indicators__item  indicators__item--1">
+                  <button class="indicators__btn  indicators__btn--1  indicators__btn--header-slider" type="button" aria-label="кнопка для перехода на слайдер №1"></button>
                 </li>
-                <li class="header-indicator__item  header-indicator__item--2">
-                  <button class="header-indicator__btn  header-indicator__btn--2" type="button" aria-label="кнопка для перехода на слайдер №2"></button>
+                <li class="indicators__item  indicators__item--2">
+                  <button class="indicators__btn  indicators__btn--2  indicators__btn--header-slider" type="button" aria-label="кнопка для перехода на слайдер №2"></button>
                 </li>
-                <li class="header-indicator__item  header-indicator__item--3">
-                  <button class="header-indicator__btn  header-indicator__btn--3  header-indicator__btn--active" type="button" aria-label="кнопка для перехода на слайдер №3"></button>
+                <li class="indicators__item  indicators__item--3">
+                  <button class="indicators__btn  indicators__btn--3  indicators__btn--header-slider  indicators__btn--active" type="button" aria-label="кнопка для перехода на слайдер №3"></button>
                 </li>
-                <li class="header-indicator__item  header-indicator__item--4">
-                  <button class="header-indicator__btn  header-indicator__btn--4" type="button" aria-label="кнопка для перехода на слайдер №4"></button>
+                <li class="indicators__item  indicators__item--4">
+                  <button class="indicators__btn  indicators__btn--4  indicators__btn--header-slider" type="button" aria-label="кнопка для перехода на слайдер №4"></button>
                 </li>
               </ul>
             </div>
@@ -106,7 +109,10 @@
           <div class="trend__slider  trend-slider">
             <ul class="trend-slider__list">
               <li class="trend-slider__item">
-                <img class="trend-slider__img" width="20" height="20" src="#" alt="NATHAN STEWART JACKET">
+                <picture>
+                  <source type="image/webp" srcset="img/natan-stewart-jacket.webp">
+                  <img class="trend-slider__img" width="570" height="570" src="img/natan-stewart-jacket.jpg" alt="NATHAN STEWART JACKET">
+                </picture>
                 <div class="trend-slider__item-wrapper">
                   <h3 class="trend-slider__item-title">NATHAN STEWART JACKET</h3>
                   <span class="trend-slider__item-text">Summer/Autumn Collection</span>
@@ -119,24 +125,20 @@
                   <form class="trend__form  size" action="https://echo.htmlacademy.ru" method="get">
                     <ul class="size__list">
                       <li class="size__item  size__item--size-m">
-                        <label class="size__input-label">M
-                          <input class="visually-hidden  size__input  size__input--radio" type="radio" name="size" value="size-M" aria-label="опция выбора размера M">
-                        </label>
+                        <input class="visually-hidden  size__input  size__input--radio" id="size-m" type="radio" name="size" value="size-M" aria-label="опция выбора размера M">
+                        <label class="size__input-label" for="size-m">M</label>
                       </li>
                       <li class="size__item  size__item--size-l">
-                        <label class="size__input-label  size__input-label--active">L
-                          <input class="visually-hidden  size__input  size__input--radio" type="radio" name="size" value="size-L" aria-label="опция выбора размера L" checked>
-                        </label>
+                        <input class="visually-hidden  size__input  size__input--radio" id="size-l" type="radio" name="size" value="size-L" aria-label="опция выбора размера L" checked>
+                        <label class="size__input-label" for="size-l">L</label>
                       </li>
                       <li class="size__item  size__item--size-xl">
-                        <label class="size__input-label">XL
-                          <input class="visually-hidden  size__input  size__input--radio" type="radio" name="size" value="size-XL" aria-label="опция выбора размера XL">
-                        </label>
+                        <input class="visually-hidden  size__input  size__input--radio" id="size-xl" type="radio" name="size" value="size-XL" aria-label="опция выбора размера XL">
+                        <label class="size__input-label" for="size-xl">XL</label>
                       </li>
                       <li class="size__item  size__item--size-xxl">
-                        <label class="size__input-label">XXL
-                          <input class="visually-hidden  size__input  size__input--radio" type="radio" name="size" value="size-XXL" aria-label="опция выбора размера XXL">
-                        </label>
+                        <input class="visually-hidden  size__input  size__input--radio" id="size-xxl" type="radio" name="size" value="size-XXL" aria-label="опция выбора размера XXL">
+                        <label class="size__input-label" for="size-xxl">XXL</label>
                       </li>
                     </ul>
                     <div class="size__btn-wrapper">
@@ -147,19 +149,19 @@
                 </div>
               </li>
             </ul>
-            <div class="trend__indicator  trend-indicator">
-              <ul class="trend-indicator__list">
-                <li class="trend-indicator__item  trend-indicator__item--1">
-                  <button class="trend-indicator__btn  trend-indicator__btn--1" type="button"></button>
+            <div class="indicators">
+              <ul class="indicators__list">
+                <li class="indicators__item  indicators__item--1">
+                  <button class="indicators__btn  indicators__btn--1  indicators__btn--trend-slider" type="button"></button>
                 </li>
-                <li class="trend-indicator__item  trend-indicator__item--2">
-                  <button class="trend-indicator__btn  trend-indicator__btn--2" type="button"></button>
+                <li class="indicators__item  indicators__item--2">
+                  <button class="indicators__btn  indicators__btn--2  indicators__btn--trend-slider" type="button"></button>
                 </li>
-                <li class="trend-indicator__item  trend-indicator__item--3">
-                  <button class="trend-indicator__btn  trend-indicator__btn--3  trend-indicator__btn--trend-active" type="button"></button>
+                <li class="indicators__item  indicators__item--3">
+                  <button class="indicators__btn  indicators__btn--3  indicators__btn--trend-slider  indicators__btn--active" type="button"></button>
                 </li>
-                <li class="trend-indicator__item  trend-indicator__item--4">
-                  <button class="trend-indicator__btn  trend-indicator__btn--4" type="button"></button>
+                <li class="indicators__item  indicators__item--4">
+                  <button class="indicators__btn  indicators__btn--4  indicators__btn--trend-slider" type="button"></button>
                 </li>
               </ul>
             </div>
@@ -173,7 +175,10 @@
             <ul class="blog-slider__list">
               <li class="blog-slider__item  blog-slider__item--1">
                 <article class="post  post--1">
-                  <img class="post__img" width="20" height="20" src="#" alt="изображение к записи GERMAN FASHION WIZARDS">
+                  <picture>
+                    <source type="image/webp" srcset="img/german-fashion-wizards.webp">
+                    <img class="post__img" width="570" height="400" src="img/german-fashion-wizards.jpg" alt="изображение к записи GERMAN FASHION WIZARDS">
+                  </picture>
                   <h3 class="post__title">GERMAN FASHION WIZARDS</h3>
                   <span class="post__text">By James Steed  |  Fashion</span>
                   <p class="post__desc">This week we had the chance of interviewing two creative artists from Germany. These guys are simply amazing at what they do with the European fashion scene and this year at Paris Fashion Week they introduced their new collection.</p>
@@ -182,7 +187,10 @@
               </li>
               <li class="blog-slider__item  blog-slider__item--2">
                 <article class="post  post--2">
-                  <img class="post__img" width="20" height="20" src="#" alt="изображение к записи ANNE STEWART’S SUNGLASSES">
+                  <picture>
+                    <source type="image/webp" srcset="img/anne-srewart-sunglasses.webp">
+                    <img class="post__img" width="570" height="400" src="img/anne-srewart-sunglasses.jpg" alt="изображение к записи ANNE STEWART’S SUNGLASSES">
+                  </picture>
                   <h3 class="post__title">STEWART’S SUNGLASSES</h3>
                   <span class="post__text">By Marry Beard  |  Trending</span>
                   <p class="post__desc">Just amazing! That is how i can describe this person. So creative,so inspiring. I was watching her create in her small studio in London and i was amazed at how every little detail gets included in her creaions. From frames,to glass thickness she blew me away...</p>
@@ -191,10 +199,10 @@
               </li>
             </ul>
             <button class="blog-slider__control  blog-slider__control--prev" type="button" aria-label="кнопка перехода на предыдущий слайд">
-              <span class="vissualy-hidden">prev</span>
+              <span class="visually-hidden">prev</span>
             </button>
             <button class="blog-slider__control  blog-slider__control--next" type="button" aria-label="кнопка перехода на следующий слайд">
-              <span class="vissualy-hidden">next</span>
+              <span class="visually-hidden">next</span>
             </button>
           </div>
         </div>
